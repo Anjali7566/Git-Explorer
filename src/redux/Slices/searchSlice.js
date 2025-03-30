@@ -1,13 +1,12 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+import { fetchRepositoriesFromAPI } from '../../utils/api';
 
-const GITHUB_API_URL = 'https://api.github.com/search/repositories?q=';
-
+// Thunk for async API call
 export const fetchRepositories = createAsyncThunk(
   'search/fetchRepositories',
   async (query) => {
-    const response = await axios.get(`${GITHUB_API_URL}${query}`);
-    return response.data.items;
+    const data = await fetchRepositoriesFromAPI(query);
+    return data;
   }
 );
 

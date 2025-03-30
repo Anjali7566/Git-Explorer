@@ -15,15 +15,6 @@ export const globalStyles = StyleSheet.create({
     paddingTop: 45, // ✅ Space from the status bar
     backgroundColor: Theme.background,
   },
-  textPrimary: {
-    color: Theme.textPrimary,
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
-  textSecondary: {
-    color: Theme.textSecondary,
-    fontSize: 16,
-  },
   errorText: {
     color: 'red',
     fontSize: 16,
@@ -114,7 +105,7 @@ export const globalStyles = StyleSheet.create({
     elevation: 4,
   },
   card: {
-    backgroundColor: '#ffffff',
+    backgroundColor: Theme.card,
     borderRadius: 16,
     paddingVertical: width * 0.07,
     paddingHorizontal: width * 0.06,
@@ -141,6 +132,20 @@ export const globalStyles = StyleSheet.create({
     alignItems: 'center',
     width: '100%',
   },
+  textPrimary: {
+    color: '#ffffff',
+    fontSize: width * 0.05,
+    fontWeight: 'bold',
+    marginBottom: 8,
+    textAlign: 'center',
+  },
+  textSecondary: {
+    color: '#cccccc',
+    fontSize: width * 0.04,
+    marginBottom: 12,
+    textAlign: 'center',
+    paddingHorizontal: 10,
+  },
   statsContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
@@ -150,14 +155,14 @@ export const globalStyles = StyleSheet.create({
   stats: {
     fontSize: width * 0.035,
     fontWeight: 'bold',
-    color: Theme.highlight,
+    color: '#f1c40f',
     backgroundColor: 'rgba(241, 196, 15, 0.2)',
     paddingVertical: 6,
     paddingHorizontal: 14,
     borderRadius: 10,
   },
   date: {
-    color: Theme.textSecondary,
+    color: '#aaaaaa',
     fontSize: width * 0.035,
     textAlign: 'center',
     paddingVertical: 4,

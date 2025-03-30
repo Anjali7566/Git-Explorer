@@ -16,9 +16,15 @@
       "supportsTablet": true
     },
     "android": {
+      "proguardEnabled": true,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "statusBar": {
+        "backgroundColor": "#000000",
+        "barStyle": "light-content",
+        "translucent": false
       },
       "package": "com.anjy.githubExplorer"
     },
@@ -27,14 +33,20 @@
     },
     "extra": {
       "eas": {
-        "projectId": "d7b4325b-b682-47c4-9d5c-0701ab44f0e1"
+        "projectId": "09a1a2a0-be5c-46ad-8db5-c1f7805ab674"
       }
     },
     "runtimeVersion": {
       "policy": "appVersion"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      "expo-build-properties"
+    ],
     "updates": {
-      "url": "https://u.expo.dev/d7b4325b-b682-47c4-9d5c-0701ab44f0e1"
+      "url": "https://u.expo.dev/09a1a2a0-be5c-46ad-8db5-c1f7805ab674"
     }
   }
 }
