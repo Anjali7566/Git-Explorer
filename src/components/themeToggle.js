@@ -7,14 +7,9 @@ const ThemeToggle = () => {
   const dispatch = useDispatch();
   const darkMode = useSelector((state) => state.theme.darkMode);
 
+  
   return (
-    <View
-      style={{
-        marginLeft:'93%',
-        transform: [{ translateX: -10.5 }],
-        marginBottom: 10,
-      }}
-    >
+    <View style={{ marginLeft: '93%', transform: [{ translateX: -10.5 }], marginBottom: 10 }}>
       <TouchableOpacity
         onPress={() => dispatch(toggleTheme())}
         style={{
