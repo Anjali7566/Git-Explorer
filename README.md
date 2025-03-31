@@ -45,40 +45,28 @@ GitHub Explorer is a React Native mobile application that allows users to search
 - **GitHub REST API**: Fetching repository data.
 - **UI Library/Custom CSS**: Styling the application.
 
-Installation and Setup
+## Installation and Setup
 
-Prerequisites
+### Prerequisites
+- Node.js and npm/yarn installed
+- Git installed
+- React Native development environment set up ([Guide](https://reactnative.dev/docs/environment-setup))
 
-Node.js and npm/yarn installed
+### Steps
+1. Clone the repository:
+ 
+   git clone https://github.com/your-username/github-explorer.git
+   cd github-explorer
+  
+2. Install dependencies:
 
-Git installed
+   npm install  # or yarn install
 
-React Native development environment set up (Guide)
+3. Run the app on an emulator or physical device:
 
-Steps
-
-Clone the repository:
-
-git clone https://github.com/your-username/github-explorer.git
-cd github-explorer
-
-Install dependencies:
-
-npm install  # or yarn install
-
-Run the app on an emulator or physical device:
-
-npx expo start  # If using Expo
-npm run android  # For Android
-npm run ios  # For iOS (Mac only)
-
-Usage
-- Enter a repository name in the search bar and view the results.
-- Click on a repository to see more details.
-- Mark repositories as favorites and view them on the favorites screen.
-- Toggle dark mode in settings.
-- Scroll to load more results (infinite scrolling/pagination).
-- Check contributor details for a selected repository.
+   npx expo start  # If using Expo
+   npm run android  # For Android
+   npm run ios  # For iOS (Mac only)
 
 
 
